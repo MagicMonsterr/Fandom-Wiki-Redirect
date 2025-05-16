@@ -11,3 +11,4 @@ This extension works with the following wikis:
 * Thorium
 * Terraria Mods
 * Fear and Hunger
+* Binding of Isaac Rebirth
