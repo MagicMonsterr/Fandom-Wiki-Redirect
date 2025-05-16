@@ -16,6 +16,6 @@ function redirect(requestDetails) {
   
 browser.webRequest.onBeforeRequest.addListener(
     redirect,
-    { urls: ["*://terraria.fandom.com/*", "*://calamitymod.fandom.com/*", "*://thoriummod.fandom.com/*", "*://terrariamods.fandom.com/*", "*://fearandhunger.fandom.com/*"] },
+    { urls: ["*://terraria.fandom.com/*", "*://calamitymod.fandom.com/*", "*://thoriummod.fandom.com/*", "*://terrariamods.fandom.com/*", "*://fearandhunger.fandom.com/*", "*://bindingofisaacrebirth.fandom.com/*"] },
     ["blocking"],
   );

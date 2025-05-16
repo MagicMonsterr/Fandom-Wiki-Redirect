@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Fandom Wiki Redirect",
-    "version": "2.0.0",
+    "version": "2.0.1",
   
     "description": "Simple extension to redirect from fandom wikis to the official wiki. Currently works with the Terraria, Calamity, Thorium, Terraria Mods, and Fear and Hunger wikis.",
   
@@ -12,7 +12,8 @@
       "*://calamitymod.fandom.com/*",
       "*://thoriummod.fandom.com/*",
       "*://terrariamods.fandom.com/*",
-      "*://fearandhunger.fandom.com/*"
+      "*://fearandhunger.fandom.com/*",
+      "*://bindingofisaacrebirth.fandom.com/*"
     ],
   
     "background": {
