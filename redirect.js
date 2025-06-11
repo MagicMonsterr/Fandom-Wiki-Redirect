@@ -2,13 +2,15 @@ function redirect(requestDetails) {
     let currentUrl = requestDetails.url;
 
     let wiki = currentUrl.substring(0, currentUrl.indexOf(".fandom"));
+    let targetUrl = "";
+    let article = "";
     
     if(currentUrl.includes("warframe")) {
-        let article = currentUrl.substring((currentUrl.indexOf("/wiki") + 5), currentUrl.length);
-        let targetUrl = (location.protocol + "//wiki.warframe.com/w" + article);
+        article = currentUrl.substring((currentUrl.indexOf("/wiki") + 5), currentUrl.length);
+        targetUrl = ("https://wiki.warframe.com/w" + article);
     } else {
-        let article = currentUrl.substring((currentUrl.indexOf("/wiki")), currentUrl.length);
-        let targetUrl = (wiki + ".wiki.gg" + article);
+        article = currentUrl.substring((currentUrl.indexOf("/wiki")), currentUrl.length);
+        targetUrl = (wiki + ".wiki.gg" + article);
     }
     console.log(`Redirecting: ${requestDetails.url}`);
     if (requestDetails.url === targetUrl) {
