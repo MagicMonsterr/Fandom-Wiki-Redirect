@@ -2,9 +2,14 @@ function redirect(requestDetails) {
     let currentUrl = requestDetails.url;
 
     let wiki = currentUrl.substring(0, currentUrl.indexOf(".fandom"));
-    let article = currentUrl.substring((currentUrl.indexOf("/wiki")), currentUrl.length);
-
-    let targetUrl = (wiki + ".wiki.gg" + article);
+    
+    if(currentUrl.includes("warframe")) {
+        let article = currentUrl.substring((currentUrl.indexOf("/wiki") + 5), currentUrl.length);
+        let targetUrl = (location.protocol + "//wiki.warframe.com/w" + article);
+    } else {
+        let article = currentUrl.substring((currentUrl.indexOf("/wiki")), currentUrl.length);
+        let targetUrl = (wiki + ".wiki.gg" + article);
+    }
     console.log(`Redirecting: ${requestDetails.url}`);
     if (requestDetails.url === targetUrl) {
       return;
@@ -16,6 +21,6 @@ function redirect(requestDetails) {
   
 browser.webRequest.onBeforeRequest.addListener(
     redirect,
-    { urls: ["*://terraria.fandom.com/*", "*://calamitymod.fandom.com/*", "*://thoriummod.fandom.com/*", "*://terrariamods.fandom.com/*", "*://fearandhunger.fandom.com/*", "*://bindingofisaacrebirth.fandom.com/*"] },
+    { urls: ["*://terraria.fandom.com/*", "*://calamitymod.fandom.com/*", "*://thoriummod.fandom.com/*", "*://terrariamods.fandom.com/*", "*://fearandhunger.fandom.com/*", "*://bindingofisaacrebirth.fandom.com/*", "*://warframe.fandom.com/*"] },
     ["blocking"],
   );
