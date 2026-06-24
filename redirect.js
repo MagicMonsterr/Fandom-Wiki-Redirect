@@ -1,18 +1,37 @@
+const redirects = {
+    "minecraft.fandom.com": {
+        base: "https://minecraft.wiki",
+        wiki: "/w/"
+    },
+    "warframe.fandom.com": {
+        base: "https://wiki.warframe.com",
+        wiki: "/w/"
+    },
+    "gta.fandom.com": {
+        base: "https://gta.wiki",
+        wiki: "/w/"
+    },
+    "terraria.fandom.com": { base: "https://terraria.wiki.gg" },
+    "calamitymod.fandom.com": { base: "https://calamitymod.wiki.gg" },
+    "thoriummod.fandom.com": { base: "https://thoriummod.wiki.gg" },
+    "terrariamods.fandom.com": { base: "https://terrariamods.wiki.gg" },
+    "fearandhunger.fandom.com": { base: "https://fearandhunger.wiki.gg" },
+    "bindingofisaacrebirth.fandom.com": { base: "https://bindingofisaacrebirth.wiki.gg" },
+}
+const urlFilters = Object.keys(redirects).map(
+    host => `*://${host}/*`
+);
 function redirect(requestDetails) {
-    let currentUrl = requestDetails.url;
+    let currentUrl = new URL(requestDetails.url);
 
-    let wiki = currentUrl.substring(0, currentUrl.indexOf(".fandom"));
-    let targetUrl = "";
-    let article = "";
-    
-    if(currentUrl.includes("warframe")) {
-        article = currentUrl.substring((currentUrl.indexOf("/wiki") + 5), currentUrl.length);
-        targetUrl = ("https://wiki.warframe.com/w" + article);
-    } else {
-        article = currentUrl.substring((currentUrl.indexOf("/wiki")), currentUrl.length);
-        targetUrl = (wiki + ".wiki.gg" + article);
+    let rule = redirects[currentUrl.hostname]
+    let targetUrl = rule.base + currentUrl.pathname;
+    console.log(targetUrl);
+    if (typeof rule.wiki != 'undefined') {
+        targetUrl = targetUrl.replace("/wiki/", rule.wiki)
     }
-    console.log(`Redirecting: ${requestDetails.url}`);
+
+    console.log(`Redirecting: ${requestDetails.url} to ${targetUrl}`);
     if (requestDetails.url === targetUrl) {
       return;
     }
@@ -23,6 +42,6 @@ function redirect(requestDetails) {
   
 browser.webRequest.onBeforeRequest.addListener(
     redirect,
-    { urls: ["*://terraria.fandom.com/*", "*://calamitymod.fandom.com/*", "*://thoriummod.fandom.com/*", "*://terrariamods.fandom.com/*", "*://fearandhunger.fandom.com/*", "*://bindingofisaacrebirth.fandom.com/*", "*://warframe.fandom.com/*"] },
+    { urls: urlFilters },
     ["blocking"],
   );
