@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Fandom Wiki Redirect",
-    "version": "2.1.2",
+    "version": "2.2.1",
   
-    "description": "Simple extension to redirect from fandom wikis to the official wiki. Currently works with the Terraria, Calamity, Thorium, Terraria Mods, Binding of Isaac Rebirth, Fear and Hunger wikis, and Warframe.",
+    "description": "Simple extension to redirect from fandom wikis to the official wiki. Currently works with the following wikis:\n Terraria\n Calamity\n Thorium\n Terraria Mods\n Binding of Isaac Rebirth\n Fear and Hunger wikis\n Warframe\n minecraft\n GTA",
   
     "permissions": [
       "webRequest",
