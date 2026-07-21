@@ -11,6 +11,10 @@ const redirects = {
         base: "https://gta.wiki",
         wiki: "/w/"
     },
+    "jojo.fandom.com": {
+        base: "https://jojowiki.com",
+        wiki: "/"
+    },
     "terraria.fandom.com": { base: "https://terraria.wiki.gg" },
     "calamitymod.fandom.com": { base: "https://calamitymod.wiki.gg" },
     "thoriummod.fandom.com": { base: "https://thoriummod.wiki.gg" },
