@@ -21,6 +21,7 @@ const redirects = {
     "terrariamods.fandom.com": { base: "https://terrariamods.wiki.gg" },
     "fearandhunger.fandom.com": { base: "https://fearandhunger.wiki.gg" },
     "bindingofisaacrebirth.fandom.com": { base: "https://bindingofisaacrebirth.wiki.gg" },
+    "pokemon.fandom.com": { base: "https://bulbapedia.bulbagarden.net" }
 }
 const urlFilters = Object.keys(redirects).map(
     host => `*://${host}/*`

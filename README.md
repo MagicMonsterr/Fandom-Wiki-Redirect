@@ -16,3 +16,4 @@ This extension works with the following wikis:
 * Minecraft
 * GTA
 * JoJo's Bizarre Adventures
+* Pokémon
