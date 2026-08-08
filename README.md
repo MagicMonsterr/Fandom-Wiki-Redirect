@@ -17,3 +17,4 @@ This extension works with the following wikis:
 * GTA
 * JoJo's Bizarre Adventures
 * Pokémon
+* League of Legends
