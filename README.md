@@ -15,6 +15,7 @@ This extension works with the following wikis:
 * Warframe
 * Minecraft
 * GTA
+* Overwatch
 * JoJo's Bizarre Adventures
 * Pokémon
 * League of Legends

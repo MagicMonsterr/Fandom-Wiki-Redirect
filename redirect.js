@@ -19,6 +19,10 @@ const redirects = {
         base: "https://wiki.leagueoflegends.com",
         wiki: "/"
     },
+      "overwatch.fandom.com": {
+        base: "https://overwatch.weirdgloop.org",
+        wiki: "/w/"
+    },
     "terraria.fandom.com": { base: "https://terraria.wiki.gg" },
     "calamitymod.fandom.com": { base: "https://calamitymod.wiki.gg" },
     "thoriummod.fandom.com": { base: "https://thoriummod.wiki.gg" },
