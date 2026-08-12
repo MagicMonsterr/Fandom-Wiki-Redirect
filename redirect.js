@@ -11,12 +11,21 @@ const redirects = {
         base: "https://gta.wiki",
         wiki: "/w/"
     },
+    "jojo.fandom.com": {
+        base: "https://jojowiki.com",
+        wiki: "/"
+    },
+    "leagueoflegends.fandom.com": {
+        base: "https://wiki.leagueoflegends.com",
+        wiki: "/"
+    },
     "terraria.fandom.com": { base: "https://terraria.wiki.gg" },
     "calamitymod.fandom.com": { base: "https://calamitymod.wiki.gg" },
     "thoriummod.fandom.com": { base: "https://thoriummod.wiki.gg" },
     "terrariamods.fandom.com": { base: "https://terrariamods.wiki.gg" },
     "fearandhunger.fandom.com": { base: "https://fearandhunger.wiki.gg" },
     "bindingofisaacrebirth.fandom.com": { base: "https://bindingofisaacrebirth.wiki.gg" },
+    "pokemon.fandom.com": { base: "https://bulbapedia.bulbagarden.net" }
 }
 const urlFilters = Object.keys(redirects).map(
     host => `*://${host}/*`
