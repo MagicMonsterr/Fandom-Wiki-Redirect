@@ -14,3 +14,4 @@ This extension works with the following wikis:
 * Binding of Isaac Rebirth
 * Minecraft
 * GTA
+* Overwatch
