@@ -12,6 +12,10 @@ This extension works with the following wikis:
 * Terraria Mods
 * Fear and Hunger
 * Binding of Isaac Rebirth
+* Warframe
 * Minecraft
 * GTA
 * Overwatch
+* JoJo's Bizarre Adventures
+* Pokémon
+* League of Legends
