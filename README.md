@@ -1,6 +1,6 @@
 # Fandom Wiki Redirect
 
-Simple extension to redirect from fandom wikis to the official wiki. Using HTTP redirect, this extension transfer you from a fandom wiki to the corresponding official/gg wiki. 
+Simple extension to redirect from fandom wikis to the official wiki. Using HTTP redirect, this extension transfers you from a fandom wiki to the corresponding official wiki. 
 
 ### Current wikis
 
