@@ -19,3 +19,6 @@ This extension works with the following wikis:
 * JoJo's Bizarre Adventures
 * Pokémon
 * League of Legends
+* Dead by Daylight
+* Fortnite
+* Team Fortress 2
