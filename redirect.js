@@ -27,6 +27,10 @@ const redirects = {
         base: "https://fortnite.weirdgloop.org",
         wiki: "/w/"
     },
+    "undertale.fandom.com": {
+        base: "https://undertale.wiki",
+        wiki: "/w/"
+    },
     "terraria.fandom.com": { base: "https://terraria.wiki.gg" },
     "calamitymod.fandom.com": { base: "https://calamitymod.wiki.gg" },
     "thoriummod.fandom.com": { base: "https://thoriummod.wiki.gg" },
