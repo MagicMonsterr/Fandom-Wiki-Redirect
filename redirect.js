@@ -31,6 +31,10 @@ const redirects = {
         base: "https://undertale.wiki",
         wiki: "/w/"
     },
+    "deltarune.fandom.com": {
+        base: "https://deltarune.wiki",
+        wiki: "/w/"
+    },
     "terraria.fandom.com": { base: "https://terraria.wiki.gg" },
     "calamitymod.fandom.com": { base: "https://calamitymod.wiki.gg" },
     "thoriummod.fandom.com": { base: "https://thoriummod.wiki.gg" },
