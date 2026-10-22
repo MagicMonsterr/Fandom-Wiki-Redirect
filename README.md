@@ -22,3 +22,7 @@ This extension works with the following wikis:
 * Dead by Daylight
 * Fortnite
 * Team Fortress 2
+* Undertale
+* Deltarune
+* World of Warcraft
+* Path of Exile

@@ -43,7 +43,9 @@ const redirects = {
     "bindingofisaacrebirth.fandom.com": { base: "https://bindingofisaacrebirth.wiki.gg" },
     "pokemon.fandom.com": { base: "https://bulbapedia.bulbagarden.net" },
     "deadbydaylight.fandom.com": { base: "https://deadbydaylight.wiki.gg" },
-    "teamfortress.fandom.com": { base: "https://wiki.teamfortress.com" }
+    "teamfortress.fandom.com": { base: "https://wiki.teamfortress.com" },
+    "wowpedia.fandom.com": { base: "https://warcraft.wiki.gg" },
+    "pathofexile.fandom.com": { base: "https://www.poewiki.net" }
 }
 const urlFilters = Object.keys(redirects).map(
     host => `*://${host}/*`
