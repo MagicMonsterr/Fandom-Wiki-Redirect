@@ -1,7 +1,7 @@
 {
    "manifest_version": 2,
     "name": "Fandom Wiki Redirect",
-    "version": "2.3.3",
+    "version": "2.3.4",
   
     "description": "Simple extension to redirect from fandom wikis to the official wiki. Currently works with a number of wikis, full list can be found on add-on page and github.",
     

@@ -26,3 +26,4 @@ This extension works with the following wikis:
 * Deltarune
 * World of Warcraft
 * Path of Exile
+* Risk of Rain 2

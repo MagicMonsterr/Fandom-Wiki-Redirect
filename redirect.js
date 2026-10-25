@@ -45,7 +45,8 @@ const redirects = {
     "deadbydaylight.fandom.com": { base: "https://deadbydaylight.wiki.gg" },
     "teamfortress.fandom.com": { base: "https://wiki.teamfortress.com" },
     "wowpedia.fandom.com": { base: "https://warcraft.wiki.gg" },
-    "pathofexile.fandom.com": { base: "https://www.poewiki.net" }
+    "pathofexile.fandom.com": { base: "https://www.poewiki.net" },
+    "riskofrain2.fandom.com": { base: "https://riskofrain2.wiki.gg" }
 }
 const urlFilters = Object.keys(redirects).map(
     host => `*://${host}/*`
